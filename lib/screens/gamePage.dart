@@ -1,6 +1,7 @@
 import 'package:appophilia/api_responce/apifetch_id.dart';
 import 'package:appophilia/models/game_model_id.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class gamePage extends StatefulWidget {
@@ -34,7 +35,12 @@ class _gamePageState extends State<gamePage> {
     return isLoading
         ? Scaffold(
             backgroundColor: Colors.deepPurple.shade50,
-            body: const Center(child: CircularProgressIndicator()),
+            body: const Center(
+              child: SpinKitSpinningLines(
+                color: Colors.deepPurple,
+                size: 50.0,
+              ),
+            ),
           )
         : Scaffold(
             backgroundColor: Colors.deepPurple.shade50,
@@ -129,7 +135,8 @@ class _gamePageState extends State<gamePage> {
                   ),
                   Container(
                     margin: EdgeInsets.all(20),
-                    padding: EdgeInsets.only(top: 20, right: 20, left: 20, bottom: 15),
+                    padding: EdgeInsets.only(
+                        top: 20, right: 20, left: 20, bottom: 15),
                     decoration: BoxDecoration(
                       boxShadow: [
                         BoxShadow(

@@ -1,9 +1,11 @@
 import 'package:appophilia/api_responce/apifetch.dart';
 import 'package:appophilia/categories/games_tag_lists.dart';
 import 'package:appophilia/models/game_model.dart';
+import 'package:appophilia/screens/category_games.dart';
 import 'package:appophilia/screens/gamePage.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class homePage extends StatefulWidget {
   const homePage({super.key});
@@ -53,9 +55,13 @@ class _homePageState extends State<homePage> {
       ),
       body: isLoading
           ? Center(
-              child: CircularProgressIndicator(),
+              child: SpinKitSpinningLines(
+                color: Colors.deepPurple,
+                size: 50.0,
+              ),
             )
           : SingleChildScrollView(
+              physics: const BouncingScrollPhysics(),
               child: Column(
                 children: [
                   Container(
@@ -70,6 +76,13 @@ class _homePageState extends State<homePage> {
                         return GestureDetector(
                           onTap: () {
                             print(categories[index]);
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) =>
+                                    categoryGame(category: categories[index]),
+                              ),
+                            );
                           },
                           child: Container(
                             padding: EdgeInsets.symmetric(

@@ -1,4 +1,5 @@
 import 'package:appophilia/firebase_options.dart';
+import 'package:appophilia/screens/category_games.dart';
 import 'package:appophilia/screens/gamePage.dart';
 import 'package:appophilia/screens/homepage.dart';
 import 'package:appophilia/screens/onBoardingScreen.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: homePage(),
+      home: onBoarding(),
     );
   }
 }
