@@ -1,16 +1,17 @@
-# appophilia
+# Appophilia
 
-A new Flutter project.
+## Team Name : Flutter-Flux
 
-## Getting Started
+## Description
+A Flutter app made by Flutter-Flux team which is used to find all the games of different categories and also can know the url's of that games
 
-This project is a starting point for a Flutter application.
+## Code Clone 
+```bash
+git clone https://github.com/Perumallpardhiv/flutter_appophilia.git
+```
+## Download Flutter-Flux Apk at 
+[app-release.zip](https://github.com/Perumallpardhiv/flutter_appophilia/files/10766734/app-release.zip)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ScreenShots
