@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "410079293980",
+    "firebase_url": "https://loginfirebase-4e349-default-rtdb.firebaseio.com",
+    "project_id": "loginfirebase-4e349",
+    "storage_bucket": "loginfirebase-4e349.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410079293980:android:c4bd9ead6d9a211eaaa5d9",
+        "android_client_info": {
+          "package_name": "com.example.appophilia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410079293980-anmrbgabnbitn23qphucujidm400pfb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyXAiOhA2pm8spX2C-1TRevUfJUKPev8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410079293980-anmrbgabnbitn23qphucujidm400pfb3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "410079293980-9p4srp8a98l8p095h82v9lo7rjm5o640.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.vritant"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,7 +1,15 @@
+import 'package:appophilia/firebase_options.dart';
+import 'package:appophilia/screens/gamePage.dart';
+import 'package:appophilia/screens/homepage.dart';
 import 'package:appophilia/screens/onBoardingScreen.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -16,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: onBoarding(),
+      home: homePage(),
     );
   }
 }
