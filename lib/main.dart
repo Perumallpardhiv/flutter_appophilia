@@ -1,7 +1,4 @@
 import 'package:appophilia/firebase_options.dart';
-import 'package:appophilia/screens/category_games.dart';
-import 'package:appophilia/screens/gamePage.dart';
-import 'package:appophilia/screens/homepage.dart';
 import 'package:appophilia/screens/onBoardingScreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
